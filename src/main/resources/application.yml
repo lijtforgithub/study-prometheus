@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: study-prometheus
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  metrics:
+    tags:
+      appliction: ${spring.application.name}
+
